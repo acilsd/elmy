@@ -1,7 +1,7 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, button, div, text)
+import Html exposing (..)
 import Html.Events exposing (onClick)
 
 
@@ -28,5 +28,4 @@ view model =
         [ button [ onClick Decrement ] [ text "Click - " ]
         , div [] [ text (String.fromInt model) ]
         , button [ onClick Increment ] [ text " Click +" ]
-        , button [ onClick Decrement ] [ text "Click - " ]
         ]
